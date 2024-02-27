@@ -20,8 +20,21 @@ Inside `exercises/breakfast.js`, you'll find a function `makeBreakfast()`.
 
 All that's missing are some `async` and `await` keywords.
 
-### Part 2: 
+You'll need to use `await` to wait for the `toaster.toast()` function to finish.
 
+### Part 2: Making coffee
+
+Similar to the first part, you'll find a function `makeCoffee()` inside `exercises/breakfast.js`.
+
+Again, all that's missing are some `async` and `await` keywords.
+
+The `grinder.grind()` and `coffeeMaker.brew()` functions are asynchronous, so you'll need to use `await` to wait for them to finish.
+
+### Part 3: Making breakfast
+
+Finally, you'll find a function `makeBreakfast()` inside `exercises/breakfast.js`.
+
+This function should return the toast and coffee that you made from the previous functions.
 
 ## Exercise 2: Error Handling
 
@@ -32,3 +45,9 @@ Have a look at the [Error Handling](https://swe-docs.netlify.app/js/handling-err
 ## Exercise 3: File I/O
 
 [Reading and Writing Files](https://swe-docs.netlify.app/js/reading-and-writing-files.html)
+
+## Extensions
+
+### 
+
+###

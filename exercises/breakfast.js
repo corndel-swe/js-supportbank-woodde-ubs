@@ -1,38 +1,26 @@
-export class Bread {
-    constructor() {
-        this.toasted = false;
-    }
-
-    toast() {
-        console.log('I\'ve been toasted!');
-        this.toasted = true;
-    }
-}
-
-export class Toaster {
-    constructor() {
-        this.slot = null;
-    }
-    add(bread) {
-        this.slot = bread;
-    }
-    async startToasting() {
-        console.log('Started toasting...');
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        this.slot.toast();
-        console.log('Finished toasting!');
-    }
-    pop() {
-        console.log('Pop!');
-        const contents = this.slot;
-        this.slot = null;
-        return contents;
-    }
-}
-
-// Add the `async` and `await` where needed to make the test pass.
-export function makeToast(bread, toaster) {
+// Exercise 1, Part 1
+// Add the `async` keyword to the function and `await` to the `toast` method.
+export async function makeToast(bread, toaster) {
     toaster.add(bread);
-    toaster.startToasting();
+    await toaster.toast();
     return toaster.pop();
+}
+
+// Exercise 1, Part 2
+// Add the `async` and `await` where needed to make the test pass.
+// The `grinder.grind()` and `coffeeMaker.brew()` methods are asynchronous.
+export async function makeCoffee(beans, grinder, coffeeMaker, cup) {
+    grinder.add(beans);
+    await grinder.grind();
+    coffeeMaker.add(grinder.dump());
+    await coffeeMaker.brew();
+    return cup.fill(coffeeMaker.pour());
+}
+
+// Exercise 1, Part 3
+// Use the async `makeToast` and `makeCoffee` functions above to make breakfast.
+export async function makeBreakfast(bread, toaster, beans, grinder, coffeeMaker, cup) {
+    const toast = await makeToast(bread, toaster) // TODO: Use makeToast()
+    const coffee = await makeCoffee(beans, grinder, coffeeMaker, cup) // TODO: Use makeCoffee()
+    return { toast, coffee }
 }
