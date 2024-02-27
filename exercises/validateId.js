@@ -3,7 +3,7 @@
 export function validateId(id) {
     // Check that the id exists
     if (id === null || id === undefined) {
-        throw new Error('ID is required');
+        throw new Error('ID is required')
     }
 
     // The id should be a string
@@ -28,9 +28,9 @@ export function validateId(id) {
 }
 
 // Exercise 2 Part 2
-// Use the `validateId` function above to validate the id 
+// Use the `validateId` function above to validate the id
 // return true if the id is valid or false otherwise.
 export function isIdValid(id, logger) {
-    logger.error('ID is invalid');
+    logger.error('ID is invalid')
     return null
 }

@@ -8,7 +8,7 @@ Lots of functions are asynchronous. They don't return a value immediately, but i
 
 Have a look at the [Async and Await](https://swe-docs.netlify.app/js/async-await.html) documentation for this exercise.
 
-A nice tangible example of where you'd think about asynchronousity is with making breakfast. 
+A nice tangible example of where you'd think about asynchronousity is with making breakfast.
 
 In this exercise, you'll be working with a set of functions that simulate making breakfast. It's a bit of a contrived example, but it's a good way to illustrate the concept.
 
@@ -52,7 +52,7 @@ We'll be implementing the `validateId` function inside `exercises/validateId.js`
 
 ### Catching Errors
 
-Now that we've written a function that throws a bunch of errors, we'll write a function that catches them. 
+Now that we've written a function that throws a bunch of errors, we'll write a function that catches them.
 
 It turns out that it's bad security practice to just throw errors willy nilly, and for them to be potentially displayed to the user. We should catch them and handle them gracefully.
 
@@ -66,6 +66,6 @@ There'll also be a `logger` object that gets passed in to `isIdValid()`. You sho
 
 ## Extensions
 
-### 
+###
 
 ###

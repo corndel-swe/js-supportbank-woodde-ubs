@@ -1,3 +1,3 @@
 # Supportbank
 
-Supportbank is a cli tool for various finance-related tasks. 
+Supportbank is a cli tool for various finance-related tasks.

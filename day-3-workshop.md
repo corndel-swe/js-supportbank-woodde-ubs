@@ -1,2 +1,1 @@
-
 ## Exchange rate updater
