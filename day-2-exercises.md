@@ -12,11 +12,16 @@ A nice tangible example of where you'd think about asynchronousity is with makin
 
 In this exercise, you'll be working with a set of functions that simulate making breakfast. It's a bit of a contrived example, but it's a good way to illustrate the concept.
 
+To run the tests for this exercise, use `npm run test:d2e1`.
+
+### Part 1: Making toast
+
 Inside `exercises/breakfast.js`, you'll find a function `makeBreakfast()`.
 
 All that's missing are some `async` and `await` keywords.
 
-To run the tests for this exercise, use `npm run test:d2e1`.
+### Part 2: 
+
 
 ## Exercise 2: Error Handling
 

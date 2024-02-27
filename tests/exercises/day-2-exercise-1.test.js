@@ -1,36 +1,64 @@
 import { strict as assert } from 'assert';
-import { makeToast } from '../../exercises/day-2-exercise-1.js';
+import { makeToast } from '../../exercises/breakfast.js';
+import { setTimeout } from 'timers/promises';
 
 function promiseState(promise) {
     const t = Symbol()
     return Promise.race([promise, t])
-        .then(v => (v === t) ? "pending" : "fulfilled")
+        .then(v => (v === t) ? "pending" : "resolved")
         .catch(() => "rejected")
 }
 
 describe('breakfast', () => {
     describe('makeToast', () => {
         it('should be an async function', () => {
-            assert.equal(makeToast.constructor.name, 'AsyncFunction');
+            assert.equal(
+                makeToast.constructor.name, 
+                'AsyncFunction',
+                'makeToast is not an async function'
+            );
         });
-        it('should wait to finish toasting', () => {
-            const called = [];
 
-            const toastPromise = new Promise();
+        it('should not resolve if toaster is still toasting', async () => {
+            const bread = {};
 
             const toaster = {
                 add: () => {},
-                startToasting: () => toastPromise,
+                startToasting: () => new Promise(() => {}),
                 pop: () => bread,
             };
 
             const makeToastPromise = makeToast(bread, toaster);
 
-            assert.equal(promiseState(makeToastPromise), "pending");
+            // Wait for the promise to have started properly
+            await setTimeout(1)
 
-            toastPromise.resolve();
+            assert.equal(
+                await promiseState(makeToastPromise), 
+                'pending',
+                'makeToast should wait for the toaster to finish toasting'
+            );
+        });
 
-            assert.equal(promiseState(makeToastPromise), "fulfilled");
+        it('should resolve when toasting is finished', async () => {
+            const bread = {};
+
+            const toaster = {
+                add: () => {},
+                startToasting: () => Promise.resolve(),
+                pop: () => bread,
+            };
+
+            const makeToastPromise = makeToast(bread, toaster);
+
+            // Wait for the promise to resolve
+            await setTimeout(1)
+
+            assert.equal(
+                await promiseState(makeToastPromise), 
+                'resolved',
+                'makeToast should finish after the toaster finishes toasting'
+            );
         });
     });
 });

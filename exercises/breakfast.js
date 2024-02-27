@@ -31,8 +31,8 @@ export class Toaster {
 }
 
 // Add the `async` and `await` where needed to make the test pass.
-export function makeToast(bread, toaster) {
+export async function makeToast(bread, toaster) {
     toaster.add(bread);
-    toaster.startToasting();
+    await toaster.startToasting();
     return toaster.pop();
 }
