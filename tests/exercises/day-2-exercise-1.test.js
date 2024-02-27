@@ -133,7 +133,7 @@ describe('breakfast', () => {
             );
         });
 
-        it('should not resolve if grinding is still happening', async () => {
+        it('should not resolve if beans are still being ground', async () => {
             const beans = {};
 
             const grinder = {
@@ -201,7 +201,7 @@ describe('breakfast', () => {
             assert.equal(
                 makeBreakfast.constructor.name, 
                 'AsyncFunction',
-                'makeCoffee is not an async function'
+                'makeBreakfast is not an async function'
             );
         });
 
