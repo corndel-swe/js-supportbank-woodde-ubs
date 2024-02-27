@@ -1,0 +1,20 @@
+{
+  "name": "swe-js-supportbank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:d1e1": "mocha ./tests/exercises/day-1-exercise-1.test.mjs",
+    "test:d1e2": "mocha ./tests/exercises/day-1-exercise-2-*.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.3.0"
+  }
+}
