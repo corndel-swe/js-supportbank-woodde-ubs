@@ -16,7 +16,7 @@ To run the tests for this exercise, use `npm run test:d2e1`.
 
 ### Part 1: Making toast
 
-Inside `exercises/breakfast.js`, you'll find a function `makeBreakfast()`.
+Inside `exercises/breakfast.js`, you'll find a function `makeToast()`.
 
 All that's missing are some `async` and `await` keywords.
 
@@ -62,10 +62,10 @@ There'll also be a `logger` object that gets passed in to `isIdValid()`. You sho
 
 ## Exercise 3: File I/O
 
-[Reading and Writing Files](https://swe-docs.netlify.app/js/reading-and-writing-files.html)
+Finally, we'll be looking at persisting data by reading and writing files.
 
-## Extensions
+Have a look at [Reading and Writing Files](https://swe-docs.netlify.app/js/reading-and-writing-files.html).
 
-###
+Next, we have some exercises for you to complete in `exercises/fileIO.js`.
 
-###
+To run the tests for them, use `npm run test:d2e3`.
