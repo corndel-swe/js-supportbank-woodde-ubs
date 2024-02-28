@@ -16,7 +16,7 @@ describe('readDiaryEntry()', () => {
 
 describe('writeSaveData()', () => {
   it('writes the saveData string to the file', async () => {
-    const uri = new URL('../resources/3-save-data.txt', import.meta.url);
+    const uri = new URL('../../exercises/resources/3-save-data.txt', import.meta.url);
     await fs.rm(uri, { force: true })
 
     const saveData = { name: 'Andy', class: 'Bard', level: 14 }
@@ -29,7 +29,7 @@ describe('writeSaveData()', () => {
 
 describe('appendLogEntry()', () => {
   it('appends a log entry to the end of the file', async () => {
-    const uri = new URL('../resources/4-log-file.txt', import.meta.url);
+    const uri = new URL('../../exercises/resources/4-log-file.txt', import.meta.url);
     await fs.rm(uri, { force: true })
 
     const firstLogEntry = "How are you?";
