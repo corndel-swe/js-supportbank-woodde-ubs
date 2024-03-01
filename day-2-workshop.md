@@ -1,6 +1,6 @@
 # Day 2 Workshop
 
-## Transaction aggregator
+## Reading Transactions
 
 The support team keep their records in CSV format. Their records for 2014 are stored in Transactions2014.csv
 
@@ -19,3 +19,5 @@ You should add two commands:
 ### Hints
 
 You can use `string.split` to split several lines of text into an array.
+
+You can then use it again to separate out each line into values using the commas.

@@ -26,4 +26,10 @@ You can read an introduction to their api [here](https://docs.openexchangerates.
 
 Make a request to their `latest.json` endpoint to get the latest exchange rates. Don't forget to add your `app_id` to the request as a query parameter!
 
+You can add a command to your CLI to list the latest exchange rates.
+
 ### Part 3: Using the exchange rates
+
+During workshop 1, we wrote a currency converter. We hard-coded the exchange rates.
+
+Modify the currency converter to use the exchange rates you fetched from the API.
