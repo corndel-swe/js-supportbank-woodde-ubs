@@ -64,7 +64,14 @@ Read the page on [Making a CLI](https://tech-docs.corndel.com/js/making-a-cli.ht
 
 Let's set up a CLI so that we can run the program from the command line.
 
+You can run the tests for this exercise with `npm run test:d1e3`.
+
 1. Install the `commander` package.
 2. Make a new file under `cli/index.js`.
 3. Set up the CLI so that it parses the command line arguments.
-4. Register the `transaction` command from `cli/transaction.js`.
+4. Register the `transactionController` from `transaction.js`
+
+### Completing the `transaction log` command
+
+Right now, the `transaction log` command doesn't do anything. We want to make it so that it logs the transactions to the console.
+
