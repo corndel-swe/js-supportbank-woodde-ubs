@@ -82,3 +82,15 @@ You can run the tests for this exercise with `npm run test:d1e3`.
 ### Completing the `transaction log` command
 
 Right now, the `transaction log` command doesn't do anything. We want to make it so that it logs the transactions to the console.
+
+Make it log a transaction nicely, so that the command
+
+```bash
+node cli transaction log "Jon A" "Joe G" 100
+```
+
+Prints out
+
+```
+At 01/03/2024 11:27am, Jon A sent Joe G £100
+```
