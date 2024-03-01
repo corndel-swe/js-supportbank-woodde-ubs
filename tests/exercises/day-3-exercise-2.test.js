@@ -1,8 +1,6 @@
 import { strict as assert } from 'assert'
 import { PokeAPI } from '../../exercises/pokeAPI.js'
 
-
-
 describe('PokeAPI', () => {
     before(() => {
         process.env.POKEAPI_URL = 'https://pokeapi.co/api/v2'

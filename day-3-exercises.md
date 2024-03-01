@@ -34,7 +34,7 @@ We've got a couple of methods already on the PokeAPI class as examples on how to
 
 Let's implement some functionality to get a list of Pokémon.
 
-There's a `getPokemonList()` method that should return a list of Pokémon names. 
+There's a `getPokemonList()` method that should return a list of Pokémon names.
 
 You can use the `fetch` method like we have in the `move` endpoint to make a request to the PokéAPI. The URL for the list of Pokémon is `https://pokeapi.co/api/v2/pokemon/`.
 
@@ -46,7 +46,7 @@ Next, we'll implement a method to get details about a particular Pokémon.
 
 There's a `getPokemonDetails(pokemon)` method that should return details about a Pokémon.
 
-Have a read of the PokeAPI documentation to see how you can get details about a Pokémon [here](https://pokeapi.co/docs/v2#pokemon). 
+Have a read of the PokeAPI documentation to see how you can get details about a Pokémon [here](https://pokeapi.co/docs/v2#pokemon).
 
 You should return the id as a number, name as a string, and types as an array of strings for the pokemon.
 

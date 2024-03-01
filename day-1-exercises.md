@@ -16,9 +16,17 @@ We've made a start by creating folders and initialising a git repository, but th
 2. We need to install the mocha package.
 3. We need to add test scripts to the newly created `package.json` file.
 
-```
+```JSON
   "scripts": {
-      /* qq add test scripts once all tests made */
+    "test:d1e1": "mocha ./tests/exercises/day-1-exercise-1.test.mjs",
+    "test:d1e2": "mocha ./tests/exercises/day-1-exercise-2-*.test.js",
+    "test:d1e3": "mocha ./tests/exercises/day-1-exercise-3.test.js",
+    "test:d2e1": "mocha ./tests/exercises/day-2-exercise-1.test.js",
+    "test:d2e2": "mocha ./tests/exercises/day-2-exercise-2.test.js",
+    "test:d2e3": "mocha ./tests/exercises/day-2-exercise-3.test.js",
+    "test:d3e1": "mocha ./tests/exercises/day-3-exercise-1.test.js",
+    "test:d3e2": "mocha ./tests/exercises/day-3-exercise-2.test.js",
+    "test:d3e3": "mocha ./tests/exercises/day-3-exercise-3.test.js"
   }
 ```
 
@@ -74,4 +82,3 @@ You can run the tests for this exercise with `npm run test:d1e3`.
 ### Completing the `transaction log` command
 
 Right now, the `transaction log` command doesn't do anything. We want to make it so that it logs the transactions to the console.
-

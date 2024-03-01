@@ -1,4 +1,5 @@
 # Day 3 Workshop
+
 ## Exchange rate updater
 
 During the first workshop, we wrote a currency converter. However, we hard-coded the exchange rates. This time, we want to fetch the exchange rates from an API.
@@ -19,7 +20,7 @@ Make sure that your `.env` file is added to the `.gitignore` file so that it doe
 
 ### Part 2: Fetching the exchange rates
 
-You can use the Open Exchange Rates API to get the latest exchange rates. 
+You can use the Open Exchange Rates API to get the latest exchange rates.
 
 You can read an introduction to their api [here](https://docs.openexchangerates.org/reference/api-introduction).
 
