@@ -1,6 +1,7 @@
 # Day 1 Workshop
 
-Now that you've got a working project, it's time to start adding some functionality to it.
+Now that you've got a working project, it's time to start adding some
+functionality to it.
 
 ## Currency converter
 
@@ -12,7 +13,8 @@ node cli convert 100 USD GBP
 
 and return the equivalent amount in the second currency.
 
-Feel free to hard-code the exchange rates for now. We'll improve this in a later workshop.
+Feel free to hard-code the exchange rates for now. We'll improve this in a later
+workshop.
 
 ## Transaction aggregator
 
@@ -46,4 +48,5 @@ node cli transaction sum "Jon A"
 Jon A has a balance of £-100
 ```
 
-This would total the transactions for Jon A and return the total amount they owe or are owed.
+This would total the transactions for Jon A and return the total amount they owe
+or are owed.
