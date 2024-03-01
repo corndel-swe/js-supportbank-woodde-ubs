@@ -6,7 +6,7 @@ These exercises are back inside the exercises folder.
 
 Lots of functions are asynchronous. They don't return a value immediately, but instead return a promise that will resolve to a value at some point in the future - once they're done with what they're doing.
 
-Have a look at the [Async and Await](https://swe-docs.netlify.app/js/async-await.html) documentation for this exercise.
+Have a look at the [Async and Await](https://tech-docs.corndel.com/js/async-await.html) documentation for this exercise.
 
 A nice tangible example of where you'd think about asynchronousity is with making breakfast.
 
@@ -40,7 +40,7 @@ It's inevitable for things to go wrong. Perhaps we try to read from a file that 
 
 It's important to be able to raise and handle errors like these in our code.
 
-Have a look at the [Error Handling](https://swe-docs.netlify.app/js/handling-errors.html) documentation for this exercise.
+Have a look at the [Error Handling](https://tech-docs.corndel.com/js/handling-errors.html) documentation for this exercise.
 
 To run the tests for this exercise, use `npm run test:d2e2`.
 
@@ -64,7 +64,7 @@ There'll also be a `logger` object that gets passed in to `isIdValid()`. You sho
 
 Finally, we'll be looking at persisting data by reading and writing files.
 
-Have a look at [Reading and Writing Files](https://swe-docs.netlify.app/js/reading-and-writing-files.html).
+Have a look at [Reading and Writing Files](https://tech-docs.corndel.com/js/reading-and-writing-files.html).
 
 Next, we have some exercises for you to complete in `exercises/fileIO.js`.
 

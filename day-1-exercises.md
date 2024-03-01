@@ -6,7 +6,7 @@ These exercises tie into the workshop later today. They're about setting up the 
 
 There's a few steps for setting up the supportbank project that haven't been done yet.
 
-The documentation is available here: [Creating a Node project](https://swe-docs.netlify.app/js/node-projects.html).
+The documentation is available here: [Creating a Node project](https://tech-docs.corndel.com/js/node-projects.html).
 
 We've made a start by creating folders and initialising a git repository, but there's a few more steps to go.
 
@@ -32,7 +32,7 @@ We'll want to ignore the `node_modules` folder so that we don't commit all of th
 
 ## Exercise 2: Modularisation
 
-Read the [Modularisation](https://swe-docs.netlify.app/js/import-export.html) page.
+Read the [Modularisation](https://tech-docs.corndel.com/js/import-export.html) page.
 
 You'll have seen and used some `import` and `export` statements in the code you've been working with. This exercise is about setting that up for the project.
 
@@ -60,7 +60,7 @@ We have some transaction related methods in `cli/transaction.js`. Export these m
 
 ## Exercise 3: Using Commander to set up a CLI
 
-Read the page on [Making a CLI](https://swe-docs.netlify.app/js/making-a-cli.html).
+Read the page on [Making a CLI](https://tech-docs.corndel.com/js/making-a-cli.html).
 
 Let's set up a CLI so that we can run the program from the command line.
 

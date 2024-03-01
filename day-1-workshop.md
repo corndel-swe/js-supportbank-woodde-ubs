@@ -12,4 +12,4 @@ node cli convert 100 USD GBP
 
 and return the equivalent amount in the second currency.
 
-Feel free to hard-code the exchange rates for now. We'll improve this in the next workshop.
+Feel free to hard-code the exchange rates for now. We'll improve this in a later workshop.
