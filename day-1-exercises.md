@@ -60,11 +60,10 @@ It might throw other errors, but that's okay for now.
 
 ### Exporting and importing
 
-The code in `cli/transaction.js` uses the `Transaction` class from `models/Transaction.js`. Export the class from `models/Transaction.js` and import it into `cli/transaction.js`.
+There is a `transactionController` object in `cli/transaction.js`.
 
-We have some transaction related methods in `cli/transaction.js`. Export these methods so that they can be used in other files.
+Export this as a default export so we can easily use it in Exercise 3.
 
-4. There is also a `transactionController` object in `cli/transaction.js`. Export this as a default export so we can easily use it in Exercise 3.
 
 ## Exercise 3: Using Commander to set up a CLI
 

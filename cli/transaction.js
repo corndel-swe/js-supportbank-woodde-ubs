@@ -8,5 +8,3 @@ transactionController
     .action((from, to, amount) => {
         // TODO
     })
-
-export default transactionController
