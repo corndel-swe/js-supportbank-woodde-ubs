@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="200px" src="supportbank-logo.png" />
+</p>
+
 # Supportbank
 
 Supportbank is a command-line interface (CLI) tool for various finance-related
