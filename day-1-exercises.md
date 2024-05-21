@@ -26,7 +26,7 @@ completed, because the testing tools haven't been installed yet!)
    ```JSON
      "scripts": {
        "test:d1e1": "mocha ./tests/exercises/day-1-exercise-1.test.mjs",
-       "test:d1e2": "mocha ./tests/exercises/day-1-exercise-2-*.test.js",
+       "test:d1e2": "mocha ./tests/exercises/day-1-exercise-2.test.js",
        "test:d1e3": "mocha ./tests/exercises/day-1-exercise-3.test.js",
        "test:d2e1": "mocha ./tests/exercises/day-2-exercise-1.test.js",
        "test:d2e2": "mocha ./tests/exercises/day-2-exercise-2.test.js",
