@@ -53,7 +53,7 @@ you've been working with. This exercise is about setting that up for the
 project.
 
 1. Read the
-   [Modularisation](https://tech-docs.corndel.com/js/import-export.html) page.
+   [Modularisation](https://github.com/corndel-playtesting/support-bank-swe-js-supportbank.git) page.
 
 2. Configure the `package.json` file to
    [use ES6 imports](https://tech-docs.corndel.com/js/imports-and-exports.html#configuring-the-project).
