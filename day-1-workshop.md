@@ -8,45 +8,26 @@ functionality to it.
 Let's write a currency converter. It should take an input like the following:
 
 ```bash
-node cli convert 100 USD GBP
+node cli convert currency 100 USD GBP
 ```
 
 and return the equivalent amount in the second currency.
 
-Feel free to hard-code the exchange rates for now. We'll improve this in a later
+Feel free to hard-code the [exchange rates](https://www.google.com/search?q=1+usd+to+gbp) for now. We'll improve this in a later
 workshop.
 
-## Transaction aggregator
+## Investment calculator
 
-Let's write a command to add transactions to keep track of.
+Our users might want an investment calculator.
 
-This command should add a transaction to a list of transactions in memory.
-
-You can use a class to represent a transaction.
+Let's say they invest $1500 at a rate of 4% over 12 years with [simple interest](https://www.bbc.co.uk/bitesize/guides/zv9p34j/revision/2).
 
 ```bash
-node cli transaction add "2014-01-01" "Jon A" "Joe G" 100 "Dinner"
+node cli invest simple 1500 4 12
 ```
 
-This following command should list the transactions added.
+The above command should calculate the projected value of the investment.
 
-```bash
-node cli transaction list
-```
+Add a similar command for an investment with [compound interest](https://www.bbc.co.uk/bitesize/articles/z2jfp4j#zhv94xs).
 
-```
-On 2014-01-01, Jon A sent Jon B £100 for Dinner
-```
-
-You can add more functionality, such as:
-
-```bash
-node cli transaction sum "Jon A"
-```
-
-```
-Jon A has a balance of £-100
-```
-
-This would total the transactions for Jon A and return the total amount they owe
-or are owed.
+You could represent investments as classes.
