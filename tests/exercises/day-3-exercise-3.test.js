@@ -1,15 +1,10 @@
 import { strict as assert } from 'assert'
-import { readJSONTransactions } from '../../exercises/readJSONTransactions.js'
+import { getPokemonList } from '../../exercises/pokeAPI.js'
 
-describe('readJSONTransactions', () => {
-    it('should read the transactions from the JSON file', async () => {
-        const transactions = await readJSONTransactions()
-        assert.deepEqual(transactions[0], {
-            Date: '2013-01-01T00:00:00',
-            FromAccount: 'Jon A',
-            ToAccount: 'Gergana I',
-            Narrative: 'Sandbox Help',
-            Amount: 2.14,
-        })
-    })
+describe('PokeAPI', () => {
+  it('should get a list of pokemon', async () => {
+    const pokemon = getPokemonList()
+    assert.ok(pokemon.length > 0)
+    assert.ok(pokemon.includes('bulbasaur'))
+  })
 })
