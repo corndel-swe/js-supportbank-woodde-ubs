@@ -12,20 +12,14 @@ To run the tests for this exercise, use `npm run test:d2e1`.
    [Async and Await](https://tech-docs.corndel.com/js/async-await.html)
    documentation for this exercise.
 
-### Making toast
-
 2. Inside [exercises/breakfast.js](/exercises/breakfast.js), you'll find a
    function `makeToast()`. All that's missing are some `async` and `await`
    keywords. You'll need to use `await` to wait for the `toaster.toast()`
    function to finish.
 
-### Making coffee
-
-3.  Similar to the first part, you'll find a function `makeCoffee()` inside
-    [exercises/breakfast.js](/exercises/breakfast.js). Again, all that's missing
-    are some `async` and `await` keywords.
-
-### Making breakfast
+3. Similar to the first part, you'll find a function `makeCoffee()` inside
+   [exercises/breakfast.js](/exercises/breakfast.js). Again, all that's missing
+   are some `async` and `await` keywords.
 
 4. Finally, you'll find a function `makeBreakfast()` inside
    [exercises/breakfast.js](/exercises/breakfast.js). This function should
@@ -40,12 +34,8 @@ To run the tests for this exercise, use `npm run test:d2e2`.
    [Error Handling](https://tech-docs.corndel.com/js/handling-errors.html)
    documentation for this exercise.
 
-### Throwing Errors
-
 2. Implement the `validateId` function inside
    [exercises/validateId.js](/exercises/validateId.js).
-
-### Catching Errors
 
 Now that we've written a function that throws a bunch of errors, we'll write a
 function that catches them.
