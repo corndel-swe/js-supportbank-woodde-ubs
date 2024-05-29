@@ -50,7 +50,7 @@ function that catches them.
      - call `logger.error(message)` with a useful message.
      - return `false`.
 
-> [!INFO]
+> [!IMPORTANT]
 >
 > `logger` is an object which is passed in to `validateId` - it is a custom
 > logger, so use `logger.error` instead of `console.log`.
