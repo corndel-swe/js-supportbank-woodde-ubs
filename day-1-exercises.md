@@ -11,8 +11,6 @@ completed, because the testing tools haven't been installed yet!)
 
 1. Read the docs on
    [Creating a Node project](https://tech-docs.corndel.com/js/node-projects.html).
-   These docs document building a health-tracker app, but you should be able to
-   transfer the steps into our project.
 
 2. Use `npm init` to
    [initialise the project](https://tech-docs.corndel.com/js/node-projects.html#initialising-with-npm-init).
@@ -37,14 +35,11 @@ completed, because the testing tools haven't been installed yet!)
      }
    ```
 
-   Now, you can test your code with `npm run test:d1e1`. At this point, there
-   should only be one failing test case.
-
 5. [Create a `.gitignore` file](https://tech-docs.corndel.com/js/node-projects.html#tracking-with-git)
    and add `node_modules` to it.
 
-6. Now run `npm run test:d1e1` again. All tests should be passing. Commit and
-   push your code!
+6. Now run `npm run test:d1e1`. All tests should be passing. Commit and push
+   your code!
 
 ## Exercise 2: Modularisation
 
@@ -53,7 +48,8 @@ you've been working with. This exercise is about setting that up for the
 project.
 
 1. Read the
-   [Modularisation](https://github.com/corndel-playtesting/support-bank-swe-js-supportbank.git) page.
+   [Modularisation](https://github.com/corndel-playtesting/support-bank-swe-js-supportbank.git)
+   page.
 
 2. Configure the `package.json` file to
    [use ES6 imports](https://tech-docs.corndel.com/js/imports-and-exports.html#configuring-the-project).
@@ -61,7 +57,6 @@ project.
 
 3. There is a file in `exercises/hello.js`. Make sure `num` is
    [exported as a named export](https://tech-docs.corndel.com/js/imports-and-exports.html#named-and-default-exports).
-   Test again.
 
 4. Export `sayHi` from `exercises/hello.js` as the default export.
 
@@ -80,15 +75,16 @@ Let's set up a CLI so that we can run the program from the command line.
 3. Make a new file under `cli/index.js`.
    [Set up the CLI](https://tech-docs.corndel.com/js/making-a-cli.html#setting-up-your-cli)
    just like in the docs. Make sure that the version is `'0.1.0'` and the
-   description is `'SupportBank'`. Check that `node cli --version` displays the version number.
-   At this point you can run `npm run test:d1e3` and should see some passing tests.
+   description is `'SupportBank'`. Check that `node cli --version` displays the
+   version number. At this point you can run `npm run test:d1e3` and should see
+   some passing tests.
 
-5. In `cli/transaction.js` there is a `transactionController`. It hasn't been
+4. In `cli/transaction.js` there is a `transactionController`. It hasn't been
    registered yet.
    [Import and register](https://tech-docs.corndel.com/js/making-a-cli.html#register-the-command)
    it with the CLI in `cli/index.js`.
 
-6. Right now, the `transaction log` command doesn't do anything. We want to make
+5. Right now, the `transaction log` command doesn't do anything. We want to make
    it so that it logs the transactions to the console. Make it log a transaction
    nicely, so that the command
 
@@ -102,7 +98,7 @@ Let's set up a CLI so that we can run the program from the command line.
    At 01/03/2024 11:27am, Jon A sent Joe G £100
    ```
 
-7. All tests should now be passing. Commit and push!
+6. All tests should now be passing. Commit and push!
 
 Congratulations! Your project is set up with git, testing, ES6 Modules and
 commander. :tada:
