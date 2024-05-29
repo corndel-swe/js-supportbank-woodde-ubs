@@ -47,9 +47,7 @@ You'll have seen and used some `import` and `export` statements in the code
 you've been working with. This exercise is about setting that up for the
 project.
 
-1. Read the
-   [Modularisation](https://github.com/corndel-playtesting/support-bank-swe-js-supportbank.git)
-   page.
+1. Read the docs on [import and export](https://tech-docs.corndel.com/js/imports-and-exports.html).
 
 2. Configure the `package.json` file to
    [use ES6 imports](https://tech-docs.corndel.com/js/imports-and-exports.html#configuring-the-project).
