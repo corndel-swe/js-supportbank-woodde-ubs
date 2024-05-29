@@ -22,10 +22,8 @@ export function validateId(id) {
 }
 
 // Exercise 2 Part 2
-
 // Use the `validateId` function above to validate the id
 // return true if the id is valid or false otherwise.
-
 // If an error is thrown, catch it and call logger.error(err)
 export function isIdValid(id, logger) {
   logger.error('ID is invalid')
