@@ -1,6 +1,32 @@
 # Day 3 Exercises
 
-## Exercise 1: Fetching Data
+## Exercise 1: Environment variables
+
+1. Have a look at the documentation on
+   [environment variables](https://tech-docs.corndel.com/js/environment-variables.html)
+
+2. Install the `dotenv` package.
+
+3. Create a `.env` file in root of the project, and add `.env` to your
+   `.gitignore` file.
+
+4. Add the following environment variable:
+   ```
+   SECRET_KEY=fDZD17pD6ox3
+   ```
+
+## Exercise 2: JSON
+
+1. Have a look through the
+   [JSON documentation](https://tech-docs.corndel.com/js/working-with-json.html).
+
+2. Open up
+   [exercises/readJSONTransactions.js](/exercises/readJSONTransactions.js) and
+   implement the `readJSONTransactions` function. It should read the
+   [file](/data/Transactions2013.json) and parse it into a JavaScript object,
+   and then return that object.
+
+## Exercise 3: Fetching Data
 
 In this exercise, we'll be fetching data from the
 [PokeAPI](https://pokeapi.co/docs/v2).
@@ -31,22 +57,12 @@ Note that the data from the API is of the form
       "name": "ivysaur",
       "url": "https://pokeapi.co/api/v2/pokemon/2/"
     }
+  ]
 }
 ```
 
 so you will need to extract just the list of Pokémon (i.e. the `"results"`) from
 the data and return that from the function.
-
-## Exercise 2: JSON
-
-1. Have a look through the
-   [JSON documentation](https://tech-docs.corndel.com/js/working-with-json.html).
-
-2. Open up
-   [exercises/readJSONTransactions.js](/exercises/readJSONTransactions.js) and
-   implement the `readJSONTransactions` function. It should read the
-   [file](/data/Transactions2013.json) and parse it into a JavaScript object,
-   and then return that object.
 
 ## Extension
 
