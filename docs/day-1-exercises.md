@@ -21,19 +21,19 @@ completed, because the testing tools haven't been installed yet!)
 
 - [ ] Add the following test scripts to the `package.json`:
 
-      ```JSON
-        "scripts": {
-          "test:d1e1": "mocha ./tests/exercises/day-1-exercise-1.test.mjs",
-          "test:d1e2": "mocha ./tests/exercises/day-1-exercise-2.test.js",
-          "test:d1e3": "mocha ./tests/exercises/day-1-exercise-3.test.js",
-          "test:d2e1": "mocha ./tests/exercises/day-2-exercise-1.test.js",
-          "test:d2e2": "mocha ./tests/exercises/day-2-exercise-2.test.js",
-          "test:d2e3": "mocha ./tests/exercises/day-2-exercise-3.test.js",
-          "test:d3e1": "mocha ./tests/exercises/day-3-exercise-1.test.js",
-          "test:d3e2": "mocha ./tests/exercises/day-3-exercise-2.test.js",
-          "test:d3e3": "mocha ./tests/exercises/day-3-exercise-3.test.js"
-        }
-      ```
+  ```JSON
+    "scripts": {
+      "test:d1e1": "mocha ./tests/exercises/day-1-exercise-1.test.mjs",
+      "test:d1e2": "mocha ./tests/exercises/day-1-exercise-2.test.js",
+      "test:d1e3": "mocha ./tests/exercises/day-1-exercise-3.test.js",
+      "test:d2e1": "mocha ./tests/exercises/day-2-exercise-1.test.js",
+      "test:d2e2": "mocha ./tests/exercises/day-2-exercise-2.test.js",
+      "test:d2e3": "mocha ./tests/exercises/day-2-exercise-3.test.js",
+      "test:d3e1": "mocha ./tests/exercises/day-3-exercise-1.test.js",
+      "test:d3e2": "mocha ./tests/exercises/day-3-exercise-2.test.js",
+      "test:d3e3": "mocha ./tests/exercises/day-3-exercise-3.test.js"
+    }
+  ```
 
 - [ ] [Create a `.gitignore` file](https://tech-docs.corndel.com/js/node-projects.html#tracking-with-git)
       and add `node_modules` to it.

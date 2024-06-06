@@ -28,6 +28,9 @@ To run the tests for this exercise, use `npm run test:d2e1`.
 
 ## Exercise 2: Error Handling
 
+In this exercise, we'll be creating functionality that checks the validity of a
+`id` string according to certain criteria.
+
 To run the tests for this exercise, use `npm run test:d2e2`.
 
 - [ ] Have a look at the
