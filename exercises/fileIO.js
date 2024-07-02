@@ -6,16 +6,18 @@ export async function readHelloWorld() {
   const path = new URL('./resources/1-hello-world.txt', import.meta.url)
 
   // TODO: Return the contents of the file as a utf-8 string
-  const content = await fs.readFile(path, 'utf-8')
-  return content
+  // const content = await fs.readFile(path, 'utf-8')
+  // return content
+  return fs.readFile(path, 'utf-8')
 }
 
 // Part 2: Return the contents of ./resources/2-diary-entry.txt
 export async function readDiaryEntry() {
   // TODO: Return the contents of the file as a utf-8 string
   const path = new URL('./resources/2-diary-entry.txt', import.meta.url)
-  const content = await fs.readFile(path, 'utf-8')
-  return content
+  // const content = await fs.readFile(path, 'utf-8')
+  // return content
+  return fs.readFile(path, 'utf-8')
 }
 
 // Part 3: Overwrite ./resources/3-save-data.txt with saveDataString
