@@ -7,9 +7,8 @@ transactionController
   .command('log <from> <to> <amount>')
   .description('Log transaction data to the console')
   .action((from, to, amount) => {
-    // TODO
-    const transaction = new Transaction(from, parseInt(amount))
-    console.log(transaction)
+
+    Transaction.makeLog(from, to, amount)
   })
 
 export default transactionController
