@@ -7,8 +7,11 @@ export async function readJSONTransactions() {
   const obj = JSON.parse(data)
   // Use JSON.parse to convert the string into an array of objects
   // and return it
+  console.log(obj)
   return obj
 }
 
-const result = await readJSONTransactions()
-console.log(result)
+readJSONTransactions()
+
+// const result = await readJSONTransactions()
+// console.log(result)
