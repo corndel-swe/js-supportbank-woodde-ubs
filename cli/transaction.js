@@ -1,5 +1,7 @@
 import { Command } from 'commander'
 import fs from "fs/promises"
+import Transaction from '../models/Transaction.js'
+
 
 const file = await fs.readFile("data/Transactions2013.json", "utf-8")
 // const fileTransactions = JSON.parse(file) --> for loading the json file
@@ -70,6 +72,27 @@ transactionController
     .description("Print a list of someones transactions by account name")
     .action((accountname) => {
 
+
+    })
+
+
+
+transactionController
+    .command('add <date> <from> <to> <narrative> <amount')
+    .description("Add data to JSON file")
+    .action(async (date, from, to, narrative, parseInt(amount)) => {
+    await Transaction.save()
+    console.log('Data added')
+
+
+    })
+
+transactionController
+    .command('read <id>')
+    .description("Read data from JSON file")
+    .action(async id => {
+        const data = await Transaction.findByID(id)
+        console.log(data)
 
     })
 
