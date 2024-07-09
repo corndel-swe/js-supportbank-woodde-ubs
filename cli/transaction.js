@@ -1,12 +1,101 @@
 import { Command } from 'commander'
+import fs from "fs/promises"
+import Transaction from '../models/Transaction.js'
+
+
+const file = await fs.readFile("data/Transactions2013.json", "utf-8")
+// const fileTransactions = JSON.parse(file) --> for loading the json file
+const fileLines = file.split("\n") // this line isn't needed for json
 
 const transactionController = new Command('transaction')
 
 transactionController
-  .command('log <from> <to> <amount>')
-  .description('Log transaction data to the console')
-  .action((from, to, amount) => {
-    // TODO
-  })
+    .command('log <from> <to> <amount>')
+    .description('Log transaction data to the console')
+    .action((from, to, amount) => {
+        const now = new Date()
+
+        console.log(`At ${now.toDateString()}, ${from} sent ${to} £${amount}`)
+    })
+
+// class Transaction {
+//     constructor(date, from, to, narrative, amount) {
+//         this.date = date
+//         this.from = from
+//         this.to = to
+//         this.narrative = narrative
+//         this.amount = amount
+//     }
+// }
+
+// function readTransactionFromLine(line) {
+//     const lineSplit = line.split(",")
+//     return new Transaction(
+//         lineSplit[0],
+//         lineSplit[1],
+//         lineSplit[2],
+//         lineSplit[3],
+//         parseFloat(lineSplit[4])
+//     )
+// }
+
+// transactionController
+//     .command("summarise all")
+//     .description("Summarise all the transactions")
+//     .action(() => {
+//         const allButFirstLine = fileLines.slice(1)
+//         const names = {}
+
+//         for (let line of allButFirstLine) {
+//             const transaction = readTransactionFromLine(line)
+
+//             if (transaction.from in names) {
+//                 names[transaction.from] -= transaction.amount
+//             } else {
+//                 names[transaction.from] = -transaction.amount
+//             }
+
+//             if (transaction.to in names) {
+//                 names[transaction.to] += transaction.amount
+//             } else {
+//                 names[transaction.to] = transaction.amount
+//             }
+//         }
+
+//         for (let accountName in names) {
+//             console.log(`${accountName}: £${names[accountName].toFixed(2)}`)
+//         }
+//     })
+
+// transactionController
+//     .command('list <accountname>')
+//     .description("Print a list of someones transactions by account name")
+//     .action((accountname) => {
+
+
+//     })
+
+
+
+// transactionController
+//     .command('add <date> <from> <to> <narrative> <amount')
+//     .description("Add data to JSON file")
+//     .action(async (date, from, to, narrative, parseInt(amount)) => {
+//     await Transaction.save()
+//     console.log('Data added')
+
+
+//     })
+
+// transactionController
+//     .command('read <id>')
+//     .description("Read data from JSON file")
+//     .action(async id => {
+//         const data = await Transaction.findByID(id)
+//         console.log(data)
+
+//     })
+
+
 
 export default transactionController
